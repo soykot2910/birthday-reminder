@@ -2,34 +2,26 @@ body {
   background: #f28ab2;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .card {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   width: 500px;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   background: white;
   border-radius: 0.3rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
-.card img {
-  width: 100%;
-}
-.celebration-card {
-  position: relative;
-}
+
 .birthday-info {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  /* transform: translate(-50%, -50%);  */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .wish {
-  color: white;
+  color: rgb(241, 235, 235);
 }
 .birthday-info img {
   width: 80px;
@@ -38,7 +30,6 @@ body {
   border: 4px solid white;
 }
 .msg {
-  position: absolute;
   bottom: 0px;
   width: 100%;
   background: rgb(108, 22, 189);
@@ -84,4 +75,76 @@ h1 {
 }
 .birthdate {
   margin-top: -10px;
+}
+
+.swiper-container {
+  background-image: url("./images/birthday.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+.details-img-wrap {
+  text-align: center;
+  padding: 20px;
+  background-color: #4e9bee;
+}
+.details-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.greating-list {
+  display: flex;
+  border-bottom: 1px solid rgb(221, 219, 219);
+  padding: 15px 0px;
+  cursor: pointer;
+  margin: 0;
+}
+.greating-list:hover {
+  background-color: rgb(221, 219, 219);
+}
+.icon-left {
+  color: #007aff;
+  margin: 0 20px;
+}
+.icon-right {
+  margin-left: auto;
+  margin-right: 20px;
 }
