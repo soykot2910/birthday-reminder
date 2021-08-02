@@ -22,7 +22,7 @@ const CelebrationCard = ({ info }) => {
 
   return (
     <div className="celebration-card">
-      <Swiper>
+      <Swiper pagination={pagination} className="mySwiper">
         {info.length === 0 ? (
           <SwiperSlide>
             <h1
@@ -49,14 +49,3 @@ const CelebrationCard = ({ info }) => {
 };
 
 export default CelebrationCard;
-
-// info.map((item) => (
-//   <SwiperSlide>
-//     <div className="birthday-info">
-//       <img src={item.image} alt="no" />
-//       <h2 className="wish">
-//         It's {item.name}'s <br /> birthday today
-//       </h2>
-//     </div>
-//   </SwiperSlide>
-// )
