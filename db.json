@@ -3,32 +3,38 @@
     {
       "id": 1,
       "name": "Bertie Yates",
-      "birthday": "25-8-2010",
+      "birthdate": "25-8-2010",
       "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg"
     },
     {
       "id": 2,
       "name": "Hester Hogan",
-      "birthday": "22-8-2010",
+      "birthdate": "22-8-2010",
       "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg"
     },
     {
       "id": 3,
       "name": "Larry Little",
-      "birthday": "2-8-2000",
+      "birthdate": "4-8-2000",
       "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg"
     },
     {
       "id": 4,
       "name": "Sean Walsh",
-      "birthday": "2-8-1998",
+      "birthdate": "4-8-1998",
       "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg"
     },
     {
       "id": 5,
       "name": "Lola Gardner",
-      "birthday": "2-8-1995",
+      "birthdate": "2-8-1995",
       "image": "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
+    },
+    {
+      "id": 6,
+      "name": "soykot",
+      "birthdate": "20-10-1998",
+      "image": "https://www.soykot.info/static/media/soykot.419ffc2b.jpg"
     }
   ]
 }

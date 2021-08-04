@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -12,7 +13,6 @@ import SwiperCore, { Pagination } from "swiper/core";
 SwiperCore.use([Pagination]);
 
 const CelebrationCard = ({ info }) => {
-  console.log(info);
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
@@ -22,11 +22,27 @@ const CelebrationCard = ({ info }) => {
 
   return (
     <div className="celebration-card">
+      <div className="controller-btn">
+        {window.location.href === "http://localhost:3000/" ? (
+          <Link to="/add" className="add-btn">
+            Add Birthday
+          </Link>
+        ) : (
+          <Link to="/">
+            <i class="fas fa-chevron-left"></i>
+          </Link>
+        )}
+        <Link to="/allbirthday"> All Birthday</Link>
+      </div>
       <Swiper pagination={pagination} className="mySwiper">
         {info.length === 0 ? (
           <SwiperSlide>
             <h1
-              style={{ textAlign: "center", padding: "20px", color: "white" }}
+              style={{
+                textAlign: "center",
+                marginTop: "-20px",
+                color: "white",
+              }}
             >
               Nobody Birthday Today
             </h1>

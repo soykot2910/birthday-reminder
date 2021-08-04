@@ -40,15 +40,15 @@ const BirthdayList = (person) => {
         <div className="info">
           <h3 className="name">{person.name}</h3>
           <p className="birthdate">
-            Turns {year - person.birthday.split("-")[2]} on{" "}
-            {monthName(Number(person.birthday.split("-")[1]))}{" "}
-            {person.birthday.split("-")[0]}
+            Turns {year - person.birthdate.split("-")[2]} on{" "}
+            {monthName(Number(person.birthdate.split("-")[1]))}{" "}
+            {person.birthdate.split("-")[0]}
           </p>
         </div>
         <h4 style={{ marginLeft: "auto" }}>
-          {person.birthday.split("-")[1] > month
-            ? (person.birthday.split("-")[1] - month) * 30 - date
-            : person.birthday.split("-")[0] - date}{" "}
+          {person.birthdate.split("-")[1] > month
+            ? (person.birthdate.split("-")[1] - month) * 30 - date
+            : person.birthdate.split("-")[0] - date}{" "}
           days
         </h4>
       </a>

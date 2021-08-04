@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import data from "../data";
+import axios from "axios";
 
 const PersonalDetails = () => {
   const params = useParams();
+  const [allPerson, setAllPerson] = useState([]);
   let [month, date, year] = new Date().toLocaleDateString("en-US").split("/");
-  const filterPerson = data.filter((person) => person.id === Number(params.id));
+  const filterPerson = allPerson.filter(
+    (person) => person.id === Number(params.id)
+  );
+
+  useEffect(() => {
+    async function fetchMyAPI() {
+      let { data } = await axios.get("http://localhost:3003/data");
+      setAllPerson(data);
+    }
+    fetchMyAPI();
+  }, []);
+
   return (
     <div className="card details-card">
       <div className="details-img-wrap">

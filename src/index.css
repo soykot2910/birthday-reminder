@@ -79,11 +79,13 @@ h1 {
 .birthdate {
   margin-top: -10px;
 }
-
-.swiper-container {
+.celebration-card {
   background-image: url("./images/birthday.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.swiper-container {
   width: 500px;
   height: 300px;
 }
@@ -150,4 +152,49 @@ h1 {
 .icon-right {
   margin-left: auto;
   margin-right: 20px;
+}
+
+.controller-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.controller-btn a {
+  color: white;
+  padding: 10px 12px;
+  border: 2px solid #f28ab2;
+}
+.controller-btn a:hover {
+  background: #f28ab2;
+}
+.add-card {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 20px;
+}
+.add-card h2 {
+  font-size: 2rem;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+input {
+  padding: 12px 10px;
+  border-radius: 5px;
+  outline: #fff;
+  width: 300px;
+}
+.btn-add {
+  padding: 8px 10px;
+  background-color: #f28ab2;
+  color: white;
+  border: 2px solid #f28ab2;
+}
+.btn-add:hover {
+  background-color: #ee3c80;
+}
+.card-show {
+  padding: 20px;
+  margin-top: 5rem;
 }
